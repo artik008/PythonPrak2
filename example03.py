@@ -28,8 +28,9 @@ def getColor(i):
 TKroot = Tk()
 TKroot.title("Prak")
 
-root = Frame(TKroot)
+root = Frame(TKroot, height = 640, width = 480)
 root.place(relx=0, rely=0, relheight=1, relwidth=1)
+root.pack( side = BOTTOM )
 
 Txt = Label(root, text="Colored Label", bg="PeachPuff")
 
